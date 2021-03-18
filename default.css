@@ -32,6 +32,7 @@ strong {
 
 h1 {
 	font-size: 56px;
+	text-shadow: 0 2px 2px var(--borderColor);
 }
 h2 {
 	font-size: 36px;
@@ -174,6 +175,8 @@ a {
 #theme-options-wrapper {
 	display: flex;
 	justify-content: center;
+	align-items: center;
+	height: 44px;
 }
 
 .theme-dot {
@@ -194,6 +197,7 @@ a {
 
 .theme-dot:hover {
 	border-width: 5px;
+	margin: 5px 2px;
 }
 
 #light-mode {
@@ -237,6 +241,7 @@ a {
 
 #preview {
 	width: 300px;
+	height: 180px;
 	border: 1.5px solid #17a2b8;
 	background-color: var(--previewBg);
 	padding: 15px;
@@ -287,8 +292,32 @@ a {
 			'right-column';
 	}
 
+	.left-column {
+		padding-bottom: 0;
+	}
+
 	.right-column {
 		justify-content: center;
 		padding-top: 0;
+	}
+}
+
+@media screen and (max-width: 450px) {
+	#preview-shadow {
+		width: 230px;
+	}
+	#preview {
+		width: 230px;
+	}
+}
+
+@media screen and (max-width: 320px) {
+	#preview-shadow {
+		width: 200px;
+		padding-left: 20px;
+		padding-top: 20px;
+	}
+	#preview {
+		width: 200px;
 	}
 }
