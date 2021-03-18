@@ -6,7 +6,10 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" />
 		<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Rubik:wght@400;700;800&display=swap" rel="stylesheet" />
-		<link rel="stylesheet" href="default.css" />
+
+		<link rel="stylesheet" type="text/css" href="default.css" />
+
+		<link id="theme-style" rel="stylesheet" type="text/css" href="" />
 
 		<title>Nicolás Pérez</title>
 	</head>
@@ -33,10 +36,10 @@
 						<h5 style="text-align: center; line-height: 0">Personalize Theme</h5>
 
 						<div id="theme-options-wrapper">
-							<div class="theme-dot" id="light-mode"></div>
-							<div class="theme-dot" id="blue-mode"></div>
-							<div class="theme-dot" id="green-mode"></div>
-							<div class="theme-dot" id="purple-mode"></div>
+							<div data-mode="blue" class="theme-dot" id="blue-mode"></div>
+							<div data-mode="light" class="theme-dot" id="light-mode"></div>
+							<div data-mode="green" class="theme-dot" id="green-mode"></div>
+							<div data-mode="purple" class="theme-dot" id="purple-mode"></div>
 						</div>
 						<p id="settings-note">* Theme settings will be saved for <br />yor next visit</p>
 					</div>
@@ -63,7 +66,7 @@
 						<p>I'm a Software Developer located in Valparaiso, Chile. Interested in the entire spectrum of frontend and backend development with primary focus on Node.js + React.</p>
 
 						<h4>Skills</h4>
-						<p>The main area of my expertise is frontend development, but with previous knowledge about the backend which allow me to create small and medium web/mobile applications.</p>
+						<p>The main area of my expertise is frontend development, but with knowledge about the backend part which allow me to create small and medium web/mobile applications.</p>
 						<p>I consider myself a self-taught developer with good problem solving skills and with high attention to details</p>
 						<p>I enjoy to be constantly learning new technologies while applying them in different projects.</p>
 						<hr />
@@ -141,16 +144,17 @@
 				<h3 style="text-align: center">Get in Touch</h3>
 				<form action="" id="contact-form">
 					<label for="name">Name</label>
-					<input class="input-field" type="text" name="name" />
+					<input id="name" class="input-field" type="text" name="name" />
 					<label for="subject">Subject</label>
-					<input class="input-field" type="text" name="subject" />
+					<input id="subject" class="input-field" type="text" name="subject" />
 					<label for="email">Email</label>
-					<input class="input-field" type="text" name="email" />
+					<input id="email" class="input-field" type="text" name="email" />
 					<label for="message">Message</label>
-					<textarea class="input-field" name="message" id="message"></textarea>
+					<textarea id="message" class="input-field" name="message" id="message"></textarea>
 					<input id="submit-btn" type="submit" value="Send" />
 				</form>
 			</div>
 		</section>
+		<script type="text/javascript" src="script.js"></script>
 	</body>
 </html>
