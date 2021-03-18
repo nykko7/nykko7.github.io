@@ -27,8 +27,8 @@
 							<div class="browser-dot" id="dot-3"></div>
 						</div>
 						<ul id="navigation">
-							<li><a target="_blank" href="resume.pdf">Resume</a></li>
-							<li><a href="#">Contact</a></li>
+							<li><a class="navigation-link" target="#resume" href="#resume">Resume</a></li>
+							<li><a class="navigation-link" href="#contact">Contact</a></li>
 						</ul>
 					</div>
 					<div class="left-column">
@@ -58,7 +58,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="s2">
+		<section id="resume" class="s2">
 			<div class="main-container">
 				<div class="about-wrapper">
 					<div class="about-me">
@@ -139,7 +139,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="s2">
+		<section id="contact" class="s2">
 			<div class="main-container">
 				<h3 style="text-align: center">Get in Touch</h3>
 				<form action="" id="contact-form">
@@ -155,6 +155,7 @@
 				</form>
 			</div>
 		</section>
+		<button onclick="topFunction()" id="toTopButton" title="Go to top">👆</button>
 		<script type="text/javascript" src="script.js"></script>
 	</body>
 </html>
