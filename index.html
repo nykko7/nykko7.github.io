@@ -24,7 +24,7 @@
 							<div class="browser-dot" id="dot-3"></div>
 						</div>
 						<ul id="navigation">
-							<li><a href="#">CV</a></li>
+							<li><a target="_blank" href="resume.pdf">Resume</a></li>
 							<li><a href="#">Contact</a></li>
 						</ul>
 					</div>
@@ -59,12 +59,15 @@
 			<div class="main-container">
 				<div class="about-wrapper">
 					<div class="about-me">
-						<h4>More About me</h4>
-						<p>I like to build new projects where I can apply my knowledge.</p>
-						<p>I consider myself a self-taught developer and I enjoy to be constantly learning.</p>
+						<h4>More about me</h4>
+						<p>I'm a Software Developer located in Valparaiso, Chile. Interested in the entire spectrum of frontend and backend development with primary focus on Node.js + React.</p>
+
+						<h4>Skills</h4>
+						<p>The main area of my expertise is frontend development, but with previous knowledge about the backend which allow me to create small and medium web/mobile applications.</p>
+						<p>I consider myself a self-taught developer with good problem solving skills and with high attention to details</p>
+						<p>I enjoy to be constantly learning new technologies while applying them in different projects.</p>
 						<hr />
-						<h4>The tools that i use</h4>
-						<p>Fullstack developer with primary focus on Node.js + React: <a target="_blank" href="resume.pdf">Download Resume</a></p>
+						<h4>Tools</h4>
 
 						<div id="skills">
 							<ul>
@@ -83,10 +86,13 @@
 							</ul>
 						</div>
 					</div>
-					<div class="social-links">
-						<img id="social_img" src="https://via.placeholder.com/500/000000/FFFFFF?text=Placeholder+Image" alt="" />
-						<h3>Find me on ...</h3>
-						<a target="_blank" href="#">Some social link: @Me</a>
+					<div class="links-wrapper">
+						<img id="github-img" src="https://via.placeholder.com/500/000000/FFFFFF?text=GitHub+Screenshot" alt="GitHub Image" />
+						<h3 id="github-title">Find me on GitHub</h3>
+						<a class="links" target="_blank" href="https://github.com/nykko7">GitHub: @nykko7</a>
+						<h3 id="or-h3">or</h3>
+
+						<a class="links" target="_blank" href="resume.pdf">Download my Resume</a>
 					</div>
 				</div>
 			</div>
@@ -131,7 +137,20 @@
 			</div>
 		</section>
 		<section class="s2">
-			<div class="main-container">Contact</div>
+			<div class="main-container">
+				<h3 style="text-align: center">Get in Touch</h3>
+				<form action="" id="contact-form">
+					<label for="name">Name</label>
+					<input class="input-field" type="text" name="name" />
+					<label for="subject">Subject</label>
+					<input class="input-field" type="text" name="subject" />
+					<label for="email">Email</label>
+					<input class="input-field" type="text" name="email" />
+					<label for="message">Message</label>
+					<textarea class="input-field" name="message" id="message"></textarea>
+					<input id="submit-btn" type="submit" value="Send" />
+				</form>
+			</div>
 		</section>
 	</body>
 </html>

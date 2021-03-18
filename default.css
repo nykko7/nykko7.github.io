@@ -10,6 +10,8 @@
 
 	--previewBg: rgba(251, 249, 243, 0.8);
 	--previewShadow: #f0ead6;
+
+	--buttonColor: black;
 }
 
 html,
@@ -62,6 +64,7 @@ textarea {
 
 a {
 	text-decoration: none;
+	font-family: 'Roboto Mono', monospace;
 	color: #17a2b8;
 }
 
@@ -286,6 +289,7 @@ a {
 }
 
 #skills {
+	margin-top: 24px;
 	display: flex;
 	justify-content: space-evenly;
 	background-color: var(--previewShadow);
@@ -308,14 +312,31 @@ a {
 	color: #333;
 }
 
-.social-links {
+.links-wrapper {
 	display: grid;
 	align-content: center;
 	text-align: center;
 }
 
-#social_img {
-	width: 100%;
+#github-img {
+	display: block;
+	margin: auto;
+	width: 85%;
+	height: 350px;
+}
+
+#github-title,
+h4 {
+	margin-bottom: 8px;
+}
+
+#or-h3 {
+	margin-bottom: 8px;
+	margin-top: 8px;
+}
+
+.links {
+	font-size: 1.4rem;
 }
 
 .post-wrapper {
@@ -355,8 +376,49 @@ a {
 	font-size: 16px;
 }
 
-.post-more-info {
-	font-family: 'Roboto Mono', monospace;
+#contact-form {
+	display: block;
+	max-width: 600px;
+	margin: 0 auto;
+	border: 1px solid var(--borderColor);
+	padding: 15px;
+	border-radius: 5px;
+	background-color: var(--mainColor);
+	margin-bottom: 50px;
+}
+
+#contact-form label {
+	line-height: 2.7em;
+}
+
+.input-field {
+	box-sizing: border-box;
+	width: 100%;
+	padding: 10px;
+	background-color: var(--secondaryColor);
+	border-radius: 5px;
+	border: 1px solid var(--borderColor);
+	font-size: 14px;
+}
+
+.input-field:focus {
+	outline: none;
+	box-shadow: 0 0 1.5px 1.5px var(--buttonColor);
+}
+
+#message {
+	resize: none;
+	min-height: 100px;
+}
+
+#submit-btn {
+	margin-top: 10px;
+	width: 100%;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	color: #fff;
+	background-color: var(--buttonColor);
+	border: none;
 }
 
 @media screen and (max-width: 1200px) {
