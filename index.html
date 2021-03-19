@@ -12,6 +12,12 @@
 		<link id="theme-style" rel="stylesheet" type="text/css" href="" />
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.10.1/devicon.min.css" />
 
+		<!-- Favicon -->
+		<link rel="./favicon/apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png" />
+		<link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png" />
+		<link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png" />
+		<link rel="manifest" href="./favicon/site.webmanifest" />
+
 		<title>Nicolás Pérez</title>
 	</head>
 	<body>
@@ -37,10 +43,9 @@
 						<h5 style="text-align: center; line-height: 0">Personalize Theme</h5>
 
 						<div id="theme-options-wrapper">
-							<div data-mode="blue" class="theme-dot" id="blue-mode"></div>
-							<div data-mode="light" class="theme-dot" id="light-mode"></div>
-							<div data-mode="green" class="theme-dot" id="green-mode"></div>
-							<div data-mode="purple" class="theme-dot" id="purple-mode"></div>
+							<i data-mode="blue" class="theme-dot" id="blue-mode"></i>
+							<i data-mode="react" class="theme-dot devicon-react-plain" id="react-mode"></i>
+							<i data-mode="nodejs" class="theme-dot devicon-nodejs-plain" id="nodejs-mode"> </i>
 						</div>
 						<p id="settings-note">* Theme settings will be saved for <br />yor next visit</p>
 					</div>
@@ -64,7 +69,9 @@
 				<div class="about-wrapper">
 					<div class="about-me">
 						<h4>More about me</h4>
-						<p>I'm a Software Developer located in Valparaiso, Chile. Interested in the entire spectrum of frontend and backend development with primary focus on Node.js + React.</p>
+						<p>
+							I'm a Software Developer located in Valparaiso, Chile. Interested in the entire spectrum of the web development, with primary focus on <strong>Node.js</strong> + <strong>React</strong>.
+						</p>
 
 						<h4>Skills</h4>
 						<p>The main area of my expertise is the frontend development, but I also have knowledge about the backend part, which allow me to create small and medium web/mobile applications.</p>
@@ -75,7 +82,7 @@
 
 						<div id="skills">
 							<ul>
-								<li><i class="devicon-html5-plain-wordmark colored"></i> HTML</li>
+								<li><i class="devicon-html5-plain colored"></i> HTML</li>
 								<li><i class="devicon-css3-plain colored"></i> CSS</li>
 								<li><i class="devicon-javascript-plain colored"></i> JavaScript</li>
 								<li><i class="devicon-nodejs-plain colored"></i> Node.js</li>
@@ -85,7 +92,7 @@
 							<ul>
 								<li><i class="devicon-heroku-plain colored"></i> Heroku</li>
 								<li><i class="devicon-git-plain colored"></i> Git</li>
-								<li><i class="devicon-wordpress-plain colored"></i> WordPress</li>
+								<li><i class="devicon-wordpress-plain"></i> WordPress</li>
 								<li><i class="devicon-mongodb-plain colored"></i> MongoDB</li>
 								<li><i class="devicon-firebase-plain colored"></i> Firebase</li>
 								<li>☕<span>A cup of Cofee</span></li>

@@ -12,16 +12,13 @@ for (let i = 0; themeDots.length > i; i++) {
 }
 
 const setTheme = (mode) => {
-	if (mode == 'blue') {
-		themeReference.href = 'blue.css';
-	} else if (mode == 'light') {
+	if (mode == 'react') {
+		themeReference.href = 'react.css';
+	} else if (mode == 'blue') {
 		themeReference.href = 'default.css';
-	} else if (mode == 'green') {
-		themeReference.href = 'green.css';
-	} else if (mode == 'purple') {
-		themeReference.href = 'purple.css';
+	} else if (mode == 'nodejs') {
+		themeReference.href = 'nodejs.css';
 	}
-
 	localStorage.setItem('theme', mode);
 };
 
