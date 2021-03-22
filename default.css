@@ -371,6 +371,31 @@ h4 {
 	padding: 15px;
 }
 
+.post-preview .post-version {
+	margin: 8px auto;
+}
+
+.post-preview .post-version-title {
+	color: black;
+	margin: 0;
+}
+
+.post-preview i {
+	background-color: black;
+	padding: 1.5px;
+}
+
+.post-preview a i {
+	background-color: transparent;
+	padding-right: 5px;
+}
+
+.post-links {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+}
+
 .post-title {
 	color: black;
 	margin: 0;
@@ -379,6 +404,7 @@ h4 {
 .post-intro {
 	color: #4b5156;
 	font-size: 16px;
+	margin-bottom: 10px;
 }
 
 #contact-form {
